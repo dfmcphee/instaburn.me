@@ -1,0 +1,30 @@
+<template name="burn">
+  <div class="burn {{selected}}">
+  	{{#unless selected_burn}}
+  	<div class="row-fluid">
+	  	<div class="span9">
+	    	<p class="content lead">{{content}}</p>
+	  	</div>
+	  	<div class="span2"><span class="label {{grade_class}}">{{grade}}</span></div>
+	  	<div class="span1">
+	    	<span class="score">{{score}}</span>
+	  	</div>
+  	</div>
+  	{{/unless}}
+  	{{#if selected_burn}}
+  	<div class="row-fluid">
+  		<div class="span3 vote-panel">
+			<a href="#" class="inc btn"><i class="icon-hand-up icon-huge"></i></a>
+			<a href="#" class="dec btn"><i class="icon-hand-down icon-huge"></i></a>
+  		</div>
+	  	<div class="span6">
+	    	<p class="content lead">{{content}}</p>
+	  	</div>
+	  	<div class="span2"><span class="label {{grade_class}}">{{grade}}</span></div>
+	  	<div class="span1">
+	    	<span class="score">{{score}}</span>
+	  	</div>
+  	</div>
+	{{/if}}
+  </div>
+</template>

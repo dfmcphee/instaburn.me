@@ -1,0 +1,159 @@
+.align-right {
+	text-align: right;
+}
+
+.icon-fire {
+	color: #DA4F49;
+}
+
+.burn {
+    cursor: pointer;
+    padding: 20px 5px 5px 5px;
+}
+
+.burn .content {
+    font-size: 1.75em;
+}
+
+.burn .score {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: #777;
+    float: right;
+    margin-right: 20px;
+}
+
+.faint {
+	color:#CCC;
+}
+
+.burn.selected {
+    background-color: #EEE;
+}
+
+.burn.selected .score {
+    color: black;
+}
+
+.details, .none {
+    font-weight: bold;
+    font-size: 2em;
+    border-style: dashed none none none;
+    border-color: #ccc;
+    border-width: 4px;
+    margin: 15px 10px;
+    padding: 30px 0px;
+}
+
+.burn-form {
+	margin-top:20px;
+}
+
+.burn-form p.lead {
+	text-align: center;
+}
+
+#login-buttons {
+    float:right;
+}
+
+#new-burn {
+    width:100%;
+}
+
+.icon-huge {
+	font-size: 4em;
+}
+
+.selected-burn {
+	line-height:1.1em;
+}
+
+.vote-panel {
+	text-align:center;
+}
+
+.load-more-span {
+	text-align: center;
+}
+
+#login-username, #login-password,  #login-password-again {
+	width: 175px;
+}
+
+#login-buttons #signup-link {
+	margin-top:10px;
+	font-size:90%;
+}
+
+.random-row {
+	margin-top:30px;
+	margin-bottom: -30px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.hero-unit h1 {
+		font-size:0.7em;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	div.hero-unit h1 {
+		font-size:100%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	div.hero-unit {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	div.hero-unit h1 {
+		font-size:2.5em;
+		margin-left:0px;
+	}
+	#login-buttons {
+		margin-top:-25px;
+	}
+}
+/*
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin: 50px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#outer {
+    width: 600px;
+    margin: 0 auto;    
+}
+
+.clearfloat {
+    clear:both;
+}
+
+.leaderboard {
+    
+}
+
+.none {
+    color: #777;
+}
+
+.inc {
+  cursor: pointer;
+}
+*/

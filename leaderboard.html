@@ -1,0 +1,33 @@
+<template name="leaderboard">
+  <div class="leaderboard">
+    {{#each burns}}
+      {{> burn}}
+    {{/each}}
+    {{#if more_burns}}
+    <div class="row-fluid">
+    	<div class="span4 offset4 load-more-span">
+    		<a href="#" class="btn load-more"><i class="icon-download-alt"></i> Load More Burns</a>
+    	</div>
+    </div>
+    {{/if}}
+  </div>
+  
+  {{#if logged_in}}
+  <div class="burn-form well">
+  	<div class="row">
+  		<div class="span7 offset2">
+  			<textarea id="new-burn" rows="3"></textarea>
+  		</div>
+  		<div class="span3">
+	  		<input type="button" class="add btn btn-danger pull-right" value="Add Burn" />
+  		</div>
+  	</div>
+  </div>
+  {{/if}}
+  
+  {{#unless logged_in}}
+  <div class="burn-form">
+  	<p class="lead faint">You must login to vote or add burns.</p>
+  </div>
+  {{/unless}}
+</template>
